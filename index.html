@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#13432A">
+<meta name="robots" content="noindex">
+<title>Lote 000412 · Comercio Seguro Escobar (prototipo)</title>
+<meta name="description" content="Prototipo del Grupo 2: de qué quinta viene el lote 000412. Datos de ejemplo.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2313432A'/%3E%3Cpath d='M20.4 5.4c4.2 6.1 6.4 14.4 3.8 21-2.2 5.3-6.9 7.1-11.6 6.4C8.3 30.9 5.3 26.9 6.2 21.2 7.5 14.3 13.7 8.3 20.4 5.4z' fill='%23F5C431' transform='translate(1 -3) scale(.95)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;800&display=swap" rel="stylesheet">
+<script>if (/[?&]alerta=1(&|$)/.test(location.search)) document.documentElement.className += ' alerta';</script>
+<style>
+  :root {
+    --verde: #13432A;
+    --amarillo: #F5C431;
+    --blanco: #FFFFFF;
+    --verde-80: rgba(19, 67, 42, .8);
+    --rojo: #B3261E;
+    --radio: 16px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--amarillo);
+    color: var(--verde);
+    font-family: "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.45;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+  }
+  h1, h2, h3, p { margin: 0; }
+  svg { display: block; }
+  .ancho { max-width: 440px; margin: 0 auto; padding: 0 16px; }
+
+  /* Modo alerta (?alerta=1) */
+  .retiro { display: none; background: var(--rojo); color: var(--blanco); }
+  .alerta .retiro { display: block; }
+  .retiro .ancho { display: flex; gap: 12px; align-items: flex-start; padding-top: 16px; padding-bottom: 16px; }
+  .retiro svg { flex: none; width: 28px; height: 28px; margin-top: 2px; }
+  .retiro p { font-size: 16px; line-height: 1.4; }
+  .retiro strong { display: block; font-size: 20px; font-weight: 800; line-height: 1.25; margin-bottom: 4px; }
+
+  /* Encabezado: la banda verde del sticker */
+  .cabecera { background: var(--verde); color: var(--blanco); }
+  .cabecera .ancho { display: grid; grid-template-columns: auto 1fr; column-gap: 10px; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+  .logo { width: 44px; height: 45px; }
+  .logo svg { width: 100%; height: 100%; }
+  .marca { min-width: 0; }
+  .fila { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; column-gap: 8px; }
+  .nombre { font-size: 18px; font-weight: 800; line-height: 1.2; }
+  .sello { display: flex; align-items: center; gap: 6px; margin-top: 5px; color: var(--amarillo); font-size: 13px; font-weight: 600; line-height: 1.25; }
+  .sello svg { flex: none; width: 16px; height: 16px; }
+  .lote { margin-left: auto; font-size: 12px; line-height: 1.2; color: rgba(255, 255, 255, .8); white-space: nowrap; }
+
+  main.ancho { padding-top: 36px; padding-bottom: 8px; }
+  .bloque { margin-bottom: 28px; }
+
+  /* Respuesta al sticker */
+  .respuesta { font-size: 42px; font-weight: 800; line-height: 1.08; letter-spacing: -.01em; margin-bottom: 32px; }
+
+  /* Tarjetas: blancas, sin borde y sin sombra, como el recuadro del QR */
+  .tarjeta { background: var(--blanco); border-radius: var(--radio); padding: 20px; }
+  .etiqueta { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--verde-80); margin-bottom: 8px; }
+  .etiqueta svg { width: 18px; height: 18px; flex: none; }
+  .chico { font-size: 14px; color: var(--verde-80); line-height: 1.4; }
+
+  /* DTV-e */
+  .dtv { display: flex; gap: 14px; align-items: flex-start; }
+  .circulo { flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--verde); display: grid; place-items: center; }
+  .circulo svg { width: 24px; height: 24px; }
+  .dtv h2 { font-size: 21px; font-weight: 800; line-height: 1.2; margin: 9px 0 6px; }
+
+  /* Producto */
+  .producto { display: flex; gap: 14px; align-items: center; }
+  .producto svg { flex: none; width: 124px; height: 140px; }
+  .producto h1 { font-size: 38px; font-weight: 800; line-height: 1.05; margin-bottom: 8px; }
+  .dato { font-size: 18px; font-weight: 600; line-height: 1.3; }
+
+  /* Dos tarjetas lado a lado */
+  .par { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .par .tarjeta { padding: 16px 14px; min-width: 0; }
+  .par h2 { font-size: 18px; font-weight: 800; line-height: 1.2; margin-bottom: 4px; }
+  .par .grande { font-size: 28px; font-weight: 800; line-height: 1.1; margin-bottom: 8px; }
+  .par p { font-size: 15px; line-height: 1.4; }
+  .par .productor { font-weight: 600; }
+  .renspa { margin-top: 10px; font-size: 13px !important; color: var(--verde-80); }
+  .renspa span { white-space: nowrap; }
+
+  /* Píldoras: verde con letras amarillas, como "Escaneá acá" */
+  .pildora { display: inline-flex; align-items: center; gap: 5px; background: var(--verde); color: var(--amarillo); font-size: 13px; font-weight: 600; line-height: 1.2; padding: 6px 11px; border-radius: 999px; }
+  .pildora svg { width: 14px; height: 14px; flex: none; }
+  .par .pildora { margin-top: 10px; font-size: 12px; padding: 5px 10px; white-space: nowrap; }
+
+  /* Recorrido */
+  .titulo { font-size: 28px; font-weight: 800; line-height: 1.15; margin-bottom: 14px; }
+  .recorrido { list-style: none; margin: 0; padding: 0; }
+  .parada { position: relative; display: flex; gap: 14px; padding-bottom: 26px; }
+  .parada:last-child { padding-bottom: 0; }
+  .parada .circulo { position: relative; z-index: 1; }
+  .parada:not(:last-child)::after {
+    content: ""; position: absolute; left: 20.5px; top: 44px; bottom: 0; width: 3px;
+    background: var(--verde); transform-origin: top; animation: trazo .55s linear both;
+  }
+  .parada:nth-child(1)::after { animation-delay: .25s; }
+  .parada:nth-child(2)::after { animation-delay: .8s; }
+  @keyframes trazo { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  .parada h3 { font-size: 18px; font-weight: 800; line-height: 1.25; margin-top: 2px; }
+  .parada p { font-size: 15px; color: var(--verde-80); }
+  .parada .pildora { margin-top: 8px; }
+
+  /* Avisos */
+  .avisos { position: relative; padding-top: 50px; }
+  .flechita { position: absolute; right: 34px; top: 0; width: 66px; height: 45px; transform: rotate(-34deg); }
+  .boton {
+    display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 58px;
+    padding: 14px 18px; border: 0; border-radius: 12px; background: var(--verde); color: var(--amarillo);
+    font: inherit; font-size: 19px; font-weight: 800; line-height: 1.2; cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .boton svg { width: 24px; height: 24px; flex: none; }
+  .boton:focus-visible { outline: 3px solid var(--verde); outline-offset: 3px; }
+  .boton .i-ok, .boton[aria-pressed="true"] .i-campana { display: none; }
+  .boton[aria-pressed="true"] .i-ok { display: block; }
+  .nota { margin-top: 12px; font-size: 16px; font-weight: 600; text-align: center; }
+
+  /* Advertencia: bloque verde, sobrio, estilo etiqueta */
+  .advertencia { background: var(--verde); color: var(--blanco); border-radius: var(--radio); padding: 8px; margin-top: 40px; }
+  .marco { border: 2px solid var(--blanco); border-radius: 10px; padding: 20px 18px; }
+  .advertencia h2 { display: flex; align-items: center; gap: 10px; font-size: 26px; font-weight: 800; line-height: 1.1; }
+  .advertencia h2 svg { width: 32px; height: 30px; flex: none; }
+  .advertencia .fuerte { font-size: 18px; font-weight: 600; line-height: 1.4; margin-top: 14px; }
+  .cifra { display: flex; gap: 14px; align-items: center; margin: 20px 0; padding: 18px 0; border-top: 1px solid rgba(255, 255, 255, .35); border-bottom: 1px solid rgba(255, 255, 255, .35); }
+  .cifra strong { font-size: 50px; font-weight: 800; line-height: 1; color: var(--amarillo); flex: none; }
+  .cifra span { font-size: 15px; line-height: 1.4; }
+  .advertencia p + p { margin-top: 12px; }
+  .advertencia .txt { font-size: 15px; line-height: 1.45; }
+  .consejo { display: flex; gap: 12px; align-items: center; margin-top: 20px; }
+  .consejo .gota { flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--amarillo); display: grid; place-items: center; }
+  .consejo .gota svg { width: 22px; height: 22px; }
+  .consejo p { font-size: 16px; font-weight: 600; line-height: 1.4; margin: 0 !important; }
+  .fuentes { margin-top: 20px; font-size: 13px; line-height: 1.5; color: rgba(255, 255, 255, .8); }
+  .fuentes a { color: var(--blanco); text-decoration: underline; text-underline-offset: 2px; display: inline-block; padding: 4px 0; }
+  .fuentes a:focus-visible { outline: 2px solid var(--amarillo); outline-offset: 2px; }
+
+  footer { text-align: center; font-size: 13px; color: var(--verde-80); padding: 28px 16px 36px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .parada::after { animation: none !important; }
+  }
+  @media (max-width: 370px) {
+    .respuesta { font-size: 36px; }
+    .nombre { font-size: 16px; }
+    .producto svg { width: 100px; height: 114px; }
+    .producto h1 { font-size: 32px; }
+    .par { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="retiro" role="alert">
+  <div class="ancho">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2.5 20h19z"/><path d="M12 9.5v5" stroke-linecap="round"/><circle cx="12" cy="17.2" r=".6" fill="#FFFFFF"/></svg>
+    <p><strong>Retiro del lote 000412.</strong> Un control oficial detectó un problema en este lote. Si compraste estas papas, no las consumas. Solo se retira este lote.</p>
+  </div>
+</div>
+
+<header class="cabecera">
+  <div class="ancho">
+    <span class="logo" aria-hidden="true"><svg viewBox="0 0 43 44" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="hoja"><path d="M27.04 3.18C31.93 10.28 34.44 19.95 31.43 27.63C28.84 33.8 23.36 35.89 17.88 35.13C12.83 32.87 9.29 28.2 10.37 21.59C11.89 13.48 19.14 6.61 27.04 3.18"/></clipPath></defs><path d="M18.21 34.01C17.56 36.26 16.75 37.66 15.19 38.84" fill="none" stroke="#F5C431" stroke-width="1.76" stroke-linecap="round"/><path d="M27.04 3.18C31.93 10.28 34.44 19.95 31.43 27.63C28.84 33.8 23.36 35.89 17.88 35.13C12.83 32.87 9.29 28.2 10.37 21.59C11.89 13.48 19.14 6.61 27.04 3.18" fill="#F5C431"/><path clip-path="url(#hoja)" d="M22.99 24.58C22.88 25.21 22.61 25.71 22.18 26.1C21.7 26.54 21.17 26.7 20.59 26.6C20.01 26.5 19.57 26.16 19.27 25.59C19 25.08 18.91 24.51 19.02 23.88C19.13 23.26 19.41 22.75 19.84 22.36C20.32 21.93 20.85 21.76 21.43 21.86C22.01 21.97 22.45 22.3 22.75 22.87C23.02 23.39 23.1 23.96 22.99 24.58C22.96 24.76 22.87 24.9 22.73 25C22.58 25.1 22.42 25.14 22.24 25.11C22.07 25.07 21.93 24.99 21.83 24.84C21.73 24.69 21.69 24.53 21.72 24.36C21.85 23.63 21.68 23.22 21.2 23.14C20.73 23.05 20.42 23.38 20.3 24.11C20.17 24.84 20.34 25.25 20.81 25.33C21.29 25.41 21.59 25.09 21.72 24.36C21.75 24.18 21.84 24.04 21.99 23.94C22.13 23.84 22.29 23.8 22.47 23.83C22.64 23.87 22.78 23.95 22.88 24.1C22.99 24.25 23.02 24.41 22.99 24.58M17.04 27.2C16.48 26.06 16.32 24.81 16.56 23.45C16.82 21.99 17.46 20.82 18.48 19.92C19.54 18.99 20.7 18.64 21.96 18.86C23.21 19.08 24.18 19.81 24.86 21.05C25.51 22.24 25.71 23.56 25.46 25.02C25.2 26.47 24.56 27.65 23.54 28.54C22.48 29.47 21.32 29.83 20.06 29.61C19.35 29.48 18.71 29.17 18.14 28.67C18.01 28.55 17.94 28.4 17.93 28.22C17.92 28.05 17.97 27.89 18.09 27.76C18.21 27.62 18.35 27.55 18.53 27.54C18.71 27.53 18.87 27.58 19 27.7C19.38 28.04 19.81 28.25 20.28 28.33C21.13 28.48 21.94 28.23 22.69 27.57C23.48 26.88 23.98 25.95 24.19 24.79C24.39 23.63 24.24 22.59 23.73 21.67C23.25 20.79 22.58 20.28 21.73 20.13C20.88 19.98 20.08 20.24 19.33 20.89C18.53 21.59 18.03 22.51 17.83 23.67C17.64 24.75 17.76 25.74 18.2 26.64C18.28 26.8 18.29 26.96 18.23 27.13C18.18 27.3 18.07 27.42 17.91 27.5C17.75 27.58 17.58 27.59 17.42 27.53C17.25 27.47 17.12 27.36 17.04 27.2M15.43 19.48C16.25 18.15 17.29 17.16 18.55 16.5C19.83 15.84 21.14 15.62 22.48 15.86C24.42 16.2 25.92 17.32 26.98 19.23C28.01 21.09 28.32 23.16 27.92 25.45C27.52 27.74 26.51 29.58 24.9 30.98C23.26 32.41 21.47 32.95 19.53 32.61C17.6 32.27 16.1 31.14 15.04 29.24C14.01 27.38 13.69 25.3 14.09 23.01C14.17 22.61 14.26 22.21 14.38 21.81C14.43 21.64 14.54 21.52 14.69 21.43C14.85 21.35 15.02 21.33 15.19 21.38C15.36 21.43 15.48 21.54 15.57 21.7C15.65 21.85 15.67 22.02 15.62 22.19C15.51 22.53 15.43 22.88 15.37 23.24C15.02 25.23 15.28 27.02 16.17 28.61C17.03 30.16 18.22 31.07 19.75 31.34C21.29 31.61 22.72 31.16 24.06 30C25.44 28.81 26.3 27.22 26.65 25.23C27 23.24 26.73 21.45 25.85 19.85C24.99 18.31 23.79 17.4 22.26 17.13C19.94 16.72 18.03 17.73 16.53 20.16C16.43 20.31 16.3 20.41 16.13 20.45C15.95 20.49 15.79 20.46 15.64 20.37C15.49 20.28 15.39 20.14 15.35 19.97C15.31 19.8 15.34 19.63 15.43 19.48M25.98 33.65C23.81 35.4 21.49 36.05 19 35.61C17.28 35.31 15.78 34.5 14.49 33.18C14.37 33.05 14.31 32.9 14.31 32.72C14.31 32.54 14.38 32.39 14.5 32.26C14.63 32.14 14.79 32.08 14.96 32.08C15.14 32.08 15.29 32.15 15.42 32.28C16.51 33.4 17.78 34.09 19.23 34.34C21.33 34.71 23.31 34.15 25.17 32.64C25.31 32.53 25.47 32.49 25.65 32.51C25.83 32.52 25.97 32.6 26.08 32.74C26.19 32.88 26.24 33.04 26.22 33.22C26.2 33.39 26.12 33.54 25.98 33.65M13.2 31.53C11.89 29.44 11.3 27.04 11.43 24.33C11.44 24.15 11.51 24 11.64 23.89C11.78 23.77 11.93 23.71 12.11 23.72C12.29 23.73 12.44 23.8 12.56 23.93C12.68 24.06 12.73 24.22 12.72 24.39C12.6 26.83 13.13 28.98 14.3 30.84C14.39 30.99 14.42 31.16 14.38 31.33C14.34 31.5 14.24 31.64 14.09 31.73C13.94 31.83 13.78 31.85 13.6 31.81C13.43 31.77 13.3 31.68 13.2 31.53M11.6 22.74C11.61 22.68 11.62 22.63 11.63 22.58C12.02 20.39 12.85 18.46 14.13 16.77C15.43 15.08 16.98 13.9 18.79 13.24C18.96 13.18 19.13 13.19 19.29 13.26C19.45 13.34 19.56 13.46 19.62 13.63C19.68 13.8 19.67 13.96 19.6 14.12C19.52 14.28 19.4 14.39 19.23 14.45C17.66 15.03 16.3 16.06 15.16 17.56C14 19.07 13.25 20.82 12.9 22.8C12.89 22.85 12.88 22.9 12.88 22.95C12.85 23.12 12.76 23.26 12.62 23.37C12.47 23.47 12.31 23.51 12.13 23.48C11.96 23.45 11.82 23.36 11.72 23.22C11.61 23.07 11.57 22.91 11.6 22.74M20.85 12.77C21.58 12.7 22.3 12.73 23.01 12.85C24.82 13.17 26.38 14.04 27.7 15.47C27.82 15.6 27.88 15.76 27.87 15.94C27.86 16.11 27.79 16.26 27.66 16.39C27.53 16.51 27.38 16.56 27.2 16.56C27.02 16.55 26.87 16.48 26.75 16.35C25.63 15.13 24.31 14.39 22.79 14.12C22.19 14.02 21.59 14 20.98 14.06C20.8 14.07 20.65 14.02 20.51 13.91C20.37 13.8 20.29 13.65 20.28 13.48C20.26 13.3 20.31 13.14 20.42 13C20.53 12.87 20.68 12.79 20.85 12.77M28.72 16.79C30.44 19.43 30.99 22.46 30.39 25.89C29.93 28.48 28.86 30.69 27.19 32.51C27.07 32.65 26.92 32.71 26.75 32.72C26.57 32.73 26.41 32.67 26.28 32.55C26.15 32.43 26.08 32.28 26.07 32.11C26.07 31.93 26.12 31.77 26.24 31.64C27.74 30.01 28.7 28.01 29.12 25.66C29.66 22.57 29.17 19.85 27.64 17.5C27.54 17.35 27.51 17.18 27.55 17.01C27.59 16.84 27.68 16.7 27.83 16.6C27.98 16.51 28.14 16.48 28.31 16.51C28.49 16.55 28.62 16.64 28.72 16.79M20.53 38.76C19.84 38.79 19.15 38.74 18.47 38.62C17.51 38.45 16.58 38.14 15.7 37.69C15.54 37.61 15.43 37.49 15.37 37.32C15.32 37.15 15.33 36.99 15.41 36.83C15.49 36.67 15.61 36.56 15.78 36.5C15.95 36.45 16.12 36.46 16.28 36.54C17.05 36.93 17.86 37.2 18.7 37.35C19.29 37.45 19.88 37.49 20.49 37.47C20.66 37.47 20.82 37.53 20.95 37.65C21.08 37.77 21.15 37.92 21.15 38.1C21.16 38.28 21.1 38.43 20.98 38.56C20.86 38.69 20.71 38.76 20.53 38.76M14.26 36.82C12.19 35.32 10.69 33.23 9.77 30.54C8.85 27.87 8.65 25.08 9.16 22.14L9.17 22.1C9.2 21.93 9.29 21.79 9.44 21.69C9.58 21.58 9.75 21.55 9.92 21.58C10.1 21.61 10.23 21.7 10.34 21.85C10.44 21.99 10.47 22.15 10.44 22.33L10.44 22.37C9.96 25.08 10.14 27.66 10.99 30.12C11.82 32.55 13.17 34.44 15.01 35.77C15.16 35.87 15.24 36.01 15.27 36.19C15.3 36.37 15.26 36.53 15.16 36.67C15.05 36.82 14.91 36.9 14.74 36.93C14.56 36.96 14.4 36.92 14.26 36.82M9.76 19.74C10.28 18.15 11 16.69 11.92 15.37C12.02 15.22 12.16 15.13 12.34 15.1C12.51 15.07 12.67 15.11 12.82 15.21C12.96 15.31 13.05 15.45 13.09 15.62C13.12 15.8 13.08 15.96 12.98 16.11C12.13 17.33 11.47 18.67 10.99 20.14C10.94 20.31 10.83 20.44 10.67 20.52C10.51 20.6 10.35 20.61 10.18 20.55C10.01 20.5 9.88 20.39 9.8 20.23C9.72 20.07 9.71 19.91 9.76 19.74M12.93 14.07C15.99 10.55 19.52 9.14 23.54 9.85C25.08 10.12 26.5 10.73 27.8 11.68C27.94 11.78 28.03 11.92 28.05 12.1C28.08 12.27 28.04 12.43 27.94 12.58C27.83 12.72 27.69 12.81 27.52 12.84C27.34 12.86 27.18 12.82 27.04 12.72C25.9 11.89 24.66 11.35 23.32 11.12C19.78 10.49 16.64 11.76 13.9 14.92C13.79 15.05 13.64 15.13 13.46 15.14C13.28 15.15 13.13 15.1 12.99 14.98C12.86 14.87 12.78 14.72 12.77 14.54C12.76 14.36 12.81 14.21 12.93 14.07M29.63 13.36C30.69 14.56 31.53 15.97 32.13 17.58C32.19 17.75 32.18 17.91 32.11 18.07C32.03 18.24 31.91 18.35 31.75 18.41C31.58 18.47 31.41 18.47 31.25 18.39C31.09 18.32 30.98 18.2 30.92 18.03C30.37 16.57 29.62 15.29 28.67 14.21C28.55 14.08 28.49 13.92 28.5 13.74C28.52 13.56 28.59 13.42 28.72 13.3C28.86 13.18 29.01 13.13 29.19 13.14C29.37 13.15 29.51 13.22 29.63 13.36M32.61 19.15C33.21 21.47 33.28 23.86 32.85 26.32C32.33 29.26 31.18 31.83 29.4 34.03C27.6 36.24 25.47 37.69 23 38.38C22.83 38.43 22.67 38.41 22.51 38.32C22.36 38.23 22.26 38.1 22.21 37.93C22.16 37.76 22.18 37.6 22.27 37.44C22.35 37.29 22.48 37.18 22.66 37.14C24.85 36.52 26.77 35.21 28.4 33.21C30.04 31.19 31.1 28.82 31.58 26.1C31.98 23.82 31.91 21.61 31.36 19.46C31.32 19.29 31.34 19.13 31.43 18.98C31.52 18.82 31.66 18.72 31.83 18.68C32 18.64 32.16 18.66 32.32 18.75C32.47 18.84 32.57 18.97 32.61 19.15M12.41 39.11C10.06 37.26 8.36 34.74 7.33 31.58C6.31 28.43 6.1 25.14 6.7 21.71C7.25 18.57 8.42 15.75 10.2 13.27C10.31 13.13 10.45 13.04 10.62 13.01C10.8 12.98 10.96 13.02 11.11 13.13C11.25 13.23 11.34 13.37 11.37 13.55C11.39 13.72 11.36 13.88 11.25 14.03C9.59 16.35 8.49 18.98 7.97 21.93C7.4 25.15 7.6 28.23 8.56 31.18C9.51 34.1 11.06 36.4 13.21 38.1C13.35 38.21 13.43 38.35 13.45 38.53C13.47 38.71 13.42 38.86 13.31 39C13.2 39.14 13.06 39.22 12.88 39.24C12.71 39.27 12.55 39.22 12.41 39.11M12.04 11.09C15.63 7.48 19.64 6.06 24.07 6.84C26.53 7.28 28.7 8.4 30.6 10.21C32.47 12.01 33.85 14.27 34.72 17C34.77 17.16 34.76 17.33 34.68 17.49C34.6 17.65 34.47 17.75 34.3 17.81C34.13 17.86 33.97 17.85 33.81 17.77C33.65 17.68 33.54 17.56 33.49 17.39C32.69 14.88 31.42 12.79 29.7 11.15C28 9.51 26.05 8.5 23.85 8.11C19.86 7.41 16.23 8.71 12.96 12C12.83 12.13 12.68 12.19 12.5 12.19C12.33 12.19 12.17 12.13 12.05 12.01C11.92 11.88 11.86 11.73 11.86 11.55C11.86 11.37 11.92 11.22 12.04 11.09M35.38 19.75C35.75 22.06 35.73 24.39 35.32 26.76C34.47 31.53 32.37 35.37 29.01 38.27C25.61 41.21 21.92 42.32 17.94 41.62C16.87 41.43 15.85 41.1 14.85 40.63C14.69 40.56 14.58 40.44 14.52 40.27C14.46 40.1 14.47 39.94 14.55 39.77C14.62 39.61 14.75 39.5 14.91 39.44C15.08 39.38 15.25 39.39 15.41 39.47C16.29 39.89 17.21 40.18 18.17 40.35C21.74 40.98 25.07 39.96 28.17 37.3C31.3 34.59 33.26 31.01 34.04 26.53C34.44 24.31 34.46 22.12 34.1 19.96C34.07 19.78 34.11 19.62 34.22 19.48C34.32 19.33 34.46 19.25 34.64 19.22C34.81 19.19 34.97 19.23 35.12 19.33C35.26 19.44 35.35 19.58 35.38 19.75M32.64 38.41C30.6 40.83 28.24 42.59 25.56 43.69C22.86 44.8 20.15 45.11 17.41 44.63C16.37 44.44 15.36 44.14 14.37 43.73C14.21 43.66 14.09 43.54 14.03 43.38C13.96 43.21 13.96 43.05 14.03 42.88C14.1 42.72 14.22 42.6 14.38 42.54C14.55 42.47 14.71 42.47 14.88 42.54C15.77 42.92 16.69 43.19 17.64 43.35C20.13 43.79 22.6 43.51 25.07 42.5C27.55 41.48 29.75 39.84 31.65 37.58C31.77 37.44 31.91 37.37 32.09 37.35C32.27 37.34 32.43 37.39 32.56 37.5C32.7 37.62 32.77 37.76 32.79 37.94C32.8 38.12 32.75 38.27 32.64 38.41M12.22 42.6C9.3 40.75 7.1 38.06 5.61 34.54C5.54 34.37 5.54 34.21 5.6 34.04C5.67 33.88 5.79 33.76 5.95 33.69C6.11 33.62 6.28 33.62 6.44 33.69C6.61 33.75 6.73 33.87 6.8 34.03C8.18 37.31 10.22 39.81 12.91 41.51C13.06 41.6 13.16 41.74 13.19 41.91C13.23 42.09 13.2 42.25 13.11 42.4C13.01 42.55 12.88 42.64 12.71 42.68C12.53 42.72 12.37 42.69 12.22 42.6M4.91 32.63C3.76 29 3.54 25.21 4.24 21.28C4.75 18.37 5.72 15.68 7.16 13.21C7.25 13.05 7.38 12.95 7.56 12.91C7.73 12.86 7.89 12.88 8.05 12.97C8.2 13.06 8.3 13.19 8.35 13.36C8.39 13.54 8.37 13.7 8.28 13.85C6.92 16.2 5.99 18.75 5.51 21.5C4.85 25.23 5.06 28.81 6.14 32.24C6.19 32.41 6.18 32.58 6.09 32.73C6.01 32.89 5.89 33 5.72 33.05C5.55 33.1 5.38 33.09 5.22 33.01C5.07 32.92 4.96 32.8 4.91 32.63M8.49 11.18C10.75 8.11 13.47 5.95 16.67 4.69C16.83 4.62 17 4.63 17.16 4.7C17.32 4.77 17.44 4.89 17.5 5.05C17.57 5.22 17.56 5.38 17.49 5.55C17.42 5.71 17.3 5.83 17.14 5.89C14.18 7.06 11.64 9.08 9.53 11.95C9.42 12.09 9.28 12.17 9.11 12.2C8.93 12.23 8.77 12.19 8.63 12.08C8.48 11.98 8.4 11.84 8.37 11.66C8.34 11.48 8.38 11.32 8.49 11.18M18.6 4.07C20.61 3.57 22.61 3.49 24.6 3.84C29.39 4.68 33.06 7.5 35.62 12.28C35.71 12.44 35.72 12.6 35.67 12.77C35.62 12.94 35.51 13.07 35.36 13.16C35.2 13.24 35.04 13.26 34.87 13.2C34.7 13.15 34.57 13.05 34.48 12.89C32.12 8.48 28.75 5.88 24.38 5.11C22.57 4.79 20.75 4.86 18.91 5.32C18.74 5.37 18.57 5.34 18.42 5.25C18.27 5.16 18.17 5.03 18.13 4.85C18.08 4.68 18.11 4.52 18.2 4.36C18.29 4.21 18.42 4.11 18.6 4.07M36.63 14.48C37.89 17.7 38.37 21.14 38.09 24.8C38.07 24.98 38 25.12 37.86 25.24C37.73 25.35 37.57 25.4 37.39 25.39C37.21 25.38 37.07 25.3 36.95 25.17C36.84 25.03 36.78 24.87 36.8 24.7C37.07 21.24 36.62 17.99 35.43 14.95C35.37 14.78 35.37 14.62 35.44 14.46C35.51 14.29 35.63 14.18 35.8 14.11C35.96 14.05 36.13 14.05 36.29 14.12C36.45 14.2 36.57 14.32 36.63 14.48M37.85 26.78C37.83 26.92 37.8 27.05 37.78 27.19C37.15 30.75 35.85 33.95 33.87 36.8C33.77 36.95 33.63 37.04 33.45 37.07C33.28 37.1 33.12 37.07 32.97 36.96C32.83 36.86 32.74 36.72 32.71 36.55C32.67 36.37 32.71 36.21 32.81 36.07C34.68 33.37 35.91 30.34 36.51 26.97C36.53 26.84 36.55 26.71 36.58 26.58C36.6 26.4 36.69 26.26 36.83 26.15C36.98 26.05 37.14 26.01 37.31 26.04C37.49 26.07 37.63 26.15 37.73 26.3C37.84 26.44 37.88 26.6 37.85 26.78M11.73 45.78C7.85 43.61 4.98 40.2 3.14 35.56C1.31 30.95 0.85 26.04 1.77 20.84C2.22 18.29 2.99 15.87 4.08 13.57C4.16 13.41 4.28 13.3 4.45 13.24C4.62 13.18 4.78 13.19 4.94 13.26C5.1 13.34 5.21 13.46 5.27 13.63C5.33 13.8 5.33 13.96 5.25 14.12C4.21 16.32 3.47 18.63 3.04 21.06C2.17 26.03 2.6 30.7 4.34 35.09C6.07 39.44 8.74 42.63 12.36 44.66C12.51 44.74 12.62 44.87 12.66 45.05C12.71 45.22 12.69 45.38 12.61 45.54C12.52 45.69 12.39 45.79 12.22 45.84C12.05 45.89 11.88 45.87 11.73 45.78M5.64 10.75C7.96 7.08 10.86 4.35 14.36 2.56C17.88 0.77 21.47 0.19 25.13 0.84C29.52 1.61 33.17 3.94 36.06 7.82C36.16 7.96 36.2 8.12 36.18 8.3C36.15 8.47 36.07 8.61 35.92 8.72C35.78 8.83 35.62 8.87 35.45 8.84C35.27 8.82 35.13 8.73 35.02 8.59C32.33 4.98 28.96 2.82 24.91 2.11C21.53 1.51 18.21 2.05 14.95 3.71C11.66 5.39 8.92 7.97 6.73 11.44C6.63 11.59 6.5 11.68 6.32 11.72C6.15 11.76 5.99 11.73 5.84 11.64C5.69 11.54 5.59 11.41 5.55 11.23C5.51 11.06 5.54 10.9 5.64 10.75M37.79 10.56C40.53 15.7 41.35 21.39 40.25 27.62C39.11 34.06 36.28 39.23 31.74 43.14C27.17 47.07 22.22 48.57 16.88 47.63C16.15 47.5 15.42 47.32 14.71 47.09C14.54 47.03 14.41 46.93 14.33 46.77C14.25 46.61 14.24 46.44 14.29 46.28C14.35 46.11 14.45 45.98 14.61 45.9C14.77 45.82 14.94 45.81 15.11 45.86C15.76 46.07 16.43 46.24 17.11 46.36C22.04 47.23 26.64 45.83 30.9 42.16C35.2 38.45 37.89 33.54 38.97 27.4C40.02 21.46 39.25 16.05 36.65 11.17C36.57 11.01 36.55 10.85 36.61 10.68C36.66 10.51 36.76 10.38 36.92 10.3C37.08 10.21 37.24 10.2 37.41 10.25C37.58 10.3 37.71 10.41 37.79 10.56M33.37 45.34C31.26 47.21 28.97 48.62 26.51 49.58C26.35 49.64 26.18 49.64 26.02 49.56C25.86 49.49 25.74 49.37 25.68 49.21C25.61 49.04 25.62 48.88 25.69 48.71C25.76 48.55 25.88 48.44 26.05 48.37C28.36 47.47 30.52 46.14 32.51 44.38C32.65 44.26 32.8 44.21 32.98 44.22C33.16 44.23 33.31 44.3 33.42 44.43C33.54 44.57 33.6 44.72 33.58 44.9C33.57 45.08 33.5 45.23 33.37 45.34M24.63 50.2C21.86 50.97 19.1 51.12 16.35 50.63C13.24 50.08 10.4 48.78 7.84 46.72C7.7 46.61 7.62 46.47 7.6 46.29C7.58 46.11 7.63 45.96 7.74 45.82C7.85 45.68 7.99 45.6 8.17 45.58C8.35 45.56 8.5 45.61 8.64 45.72C11.04 47.64 13.68 48.85 16.58 49.36C19.13 49.81 21.7 49.68 24.28 48.96C24.45 48.91 24.62 48.93 24.77 49.02C24.93 49.11 25.03 49.24 25.07 49.41C25.12 49.58 25.1 49.74 25.02 49.9C24.93 50.05 24.8 50.15 24.63 50.2M6.04 45.1C4.19 43.23 2.68 41.02 1.49 38.49C1.41 38.32 1.4 38.16 1.46 37.99C1.52 37.82 1.64 37.7 1.8 37.63C1.96 37.55 2.12 37.54 2.29 37.61C2.46 37.67 2.58 37.78 2.66 37.94C3.78 40.34 5.22 42.43 6.96 44.19C7.08 44.32 7.14 44.47 7.14 44.65C7.14 44.83 7.08 44.98 6.95 45.11C6.82 45.23 6.67 45.29 6.49 45.29C6.32 45.29 6.16 45.23 6.04 45.1M0.7 36.63C-1.24 31.53 -1.7 26.12 -0.69 20.41C-0.63 20.05 -0.56 19.69 -0.49 19.33C-0.45 19.15 -0.36 19.02 -0.21 18.92C-0.06 18.82 0.1 18.79 0.28 18.83C0.45 18.87 0.59 18.96 0.69 19.11C0.78 19.26 0.81 19.42 0.78 19.59C0.7 19.94 0.64 20.28 0.58 20.63C-0.39 26.11 0.05 31.29 1.91 36.18C1.97 36.34 1.97 36.51 1.89 36.67C1.82 36.83 1.7 36.94 1.54 37.01C1.37 37.07 1.2 37.07 1.04 36.99C0.88 36.92 0.77 36.8 0.7 36.63M0.09 17.01C0.85 14.39 1.91 11.94 3.27 9.66C3.36 9.51 3.49 9.41 3.67 9.37C3.84 9.32 4 9.35 4.16 9.44C4.31 9.53 4.41 9.66 4.45 9.84C4.49 10.01 4.47 10.17 4.38 10.32C3.08 12.51 2.06 14.85 1.33 17.36C1.29 17.54 1.18 17.66 1.03 17.75C0.87 17.84 0.71 17.85 0.54 17.8C0.36 17.75 0.24 17.65 0.15 17.5C0.06 17.34 0.05 17.18 0.09 17.01M4.36 7.98C8.13 2.54 12.85 -0.8 18.53 -2.02C18.7 -2.06 18.86 -2.03 19.01 -1.93C19.16 -1.83 19.26 -1.7 19.29 -1.52C19.33 -1.35 19.3 -1.19 19.21 -1.04C19.11 -0.89 18.97 -0.79 18.8 -0.76C13.46 0.39 9 3.55 5.42 8.71C5.31 8.86 5.18 8.95 5 8.98C4.83 9.01 4.66 8.98 4.52 8.88C4.37 8.77 4.28 8.64 4.25 8.46C4.22 8.29 4.25 8.12 4.36 7.98M20.92 -2.38C22.52 -2.51 24.1 -2.44 25.66 -2.17C26.75 -1.98 27.82 -1.69 28.86 -1.3C29.03 -1.24 29.15 -1.12 29.22 -0.96C29.3 -0.8 29.3 -0.63 29.24 -0.47C29.18 -0.3 29.07 -0.18 28.91 -0.11C28.74 -0.03 28.58 -0.03 28.41 -0.09C27.44 -0.45 26.45 -0.72 25.44 -0.9C23.99 -1.15 22.52 -1.22 21.03 -1.09C20.85 -1.08 20.7 -1.13 20.56 -1.24C20.42 -1.36 20.35 -1.5 20.33 -1.68C20.32 -1.86 20.37 -2.01 20.48 -2.15C20.6 -2.29 20.74 -2.36 20.92 -2.38M30.71 -0.49C35.93 2.13 39.59 6.59 41.7 12.91C41.75 13.08 41.74 13.24 41.66 13.4C41.58 13.56 41.46 13.67 41.29 13.72C41.12 13.78 40.95 13.77 40.79 13.69C40.64 13.61 40.53 13.48 40.47 13.32C38.48 7.34 35.04 3.12 30.13 0.66C29.97 0.58 29.87 0.46 29.81 0.29C29.75 0.12 29.77 -0.04 29.85 -0.2C29.93 -0.36 30.05 -0.47 30.22 -0.53C30.39 -0.58 30.55 -0.57 30.71 -0.49M42.36 15.22C42.98 17.78 43.26 20.43 43.2 23.15C43.19 23.33 43.13 23.48 43 23.6C42.87 23.73 42.71 23.79 42.54 23.78C42.36 23.78 42.21 23.71 42.08 23.58C41.96 23.45 41.9 23.3 41.91 23.12C41.96 20.51 41.7 17.98 41.1 15.52C41.06 15.35 41.09 15.19 41.18 15.04C41.27 14.88 41.41 14.79 41.58 14.74C41.75 14.7 41.92 14.73 42.07 14.82C42.22 14.91 42.32 15.05 42.36 15.22M43.09 25.18C43 26.14 42.88 27.1 42.71 28.06C41.63 34.21 39.08 39.42 35.09 43.67C34.97 43.8 34.81 43.87 34.64 43.88C34.46 43.88 34.3 43.83 34.17 43.7C34.04 43.58 33.98 43.43 33.97 43.25C33.97 43.08 34.02 42.92 34.15 42.79C37.97 38.72 40.4 33.74 41.44 27.84C41.6 26.92 41.72 26 41.8 25.07C41.82 24.89 41.89 24.75 42.03 24.63C42.16 24.52 42.32 24.47 42.5 24.48C42.68 24.5 42.82 24.57 42.94 24.71C43.05 24.85 43.1 25 43.09 25.18M7.93 50.45C3.5 47.5 0.27 43.22 -1.76 37.62C-3.78 32.04 -4.25 26.16 -3.16 19.97C-2.34 15.32 -0.7 11.07 1.75 7.21C1.84 7.06 1.98 6.97 2.15 6.93C2.32 6.89 2.49 6.92 2.64 7.01C2.79 7.11 2.88 7.24 2.92 7.42C2.96 7.59 2.93 7.75 2.83 7.91C0.48 11.61 -1.1 15.71 -1.89 20.2C-2.94 26.16 -2.49 31.82 -0.55 37.18C1.39 42.52 4.45 46.58 8.65 49.38C8.8 49.48 8.89 49.61 8.92 49.79C8.96 49.96 8.93 50.12 8.83 50.27C8.73 50.42 8.59 50.51 8.42 50.55C8.24 50.58 8.08 50.55 7.93 50.45M3.59 4.6C6.55 0.84 10.03 -1.91 14.02 -3.64C18.04 -5.38 22.1 -5.89 26.19 -5.17C29.77 -4.54 33.01 -3.02 35.92 -0.62C38.83 1.78 41.13 4.84 42.84 8.55C42.91 8.72 42.92 8.88 42.86 9.05C42.79 9.21 42.68 9.33 42.52 9.41C42.36 9.48 42.19 9.49 42.03 9.43C41.86 9.37 41.74 9.25 41.66 9.09C40.04 5.56 37.85 2.65 35.1 0.38C32.36 -1.88 29.32 -3.31 25.97 -3.9C22.13 -4.58 18.32 -4.1 14.54 -2.46C10.74 -0.81 7.43 1.81 4.61 5.4C4.5 5.54 4.35 5.62 4.18 5.64C4 5.66 3.84 5.62 3.7 5.51C3.56 5.4 3.48 5.25 3.46 5.08C3.44 4.9 3.48 4.74 3.59 4.6M44.02 11.55C45.83 16.94 46.22 22.59 45.18 28.49C43.75 36.59 40.18 43.09 34.48 48C28.74 52.94 22.52 54.82 15.82 53.64C14.07 53.33 12.38 52.79 10.75 52.04C10.59 51.96 10.48 51.84 10.42 51.67C10.35 51.5 10.36 51.34 10.44 51.18C10.51 51.02 10.63 50.91 10.8 50.84C10.97 50.78 11.13 50.79 11.29 50.87C12.82 51.58 14.41 52.08 16.05 52.37C22.34 53.48 28.21 51.7 33.64 47.02C39.11 42.31 42.53 36.06 43.9 28.27C44.91 22.58 44.54 17.14 42.8 11.96C42.74 11.79 42.75 11.62 42.83 11.46C42.91 11.3 43.04 11.2 43.2 11.14C43.37 11.08 43.54 11.09 43.7 11.17C43.86 11.25 43.96 11.38 44.02 11.55" fill="#13432A"/></svg></span>
+    <div class="marca">
+      <div class="fila">
+        <p class="nombre">Comercio Seguro Escobar</p>
+        <p class="lote">Lote 000412</p>
+      </div>
+      <p class="sello"><svg viewBox="0 0 12.84 12.84" aria-hidden="true"><circle cx="6.42" cy="6.42" r="6.42" fill="#F5C431"/><path d="M3.48 6.69 5.41 8.62 9.37 4.33" fill="none" stroke="#13432A" stroke-width="1.605" stroke-linecap="round" stroke-linejoin="round"/></svg>Quinta inscripta en SENASA (RENSPA)</p>
+    </div>
+  </div>
+</header>
+
+<main class="ancho">
+
+  <p class="respuesta">Viene de Quinta El Ceibo.</p>
+
+  <section class="tarjeta bloque dtv" aria-label="Documento de tránsito">
+    <span class="circulo"><svg viewBox="0 0 24 24" fill="none" stroke="#F5C431" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5.5 12.5 4.2 4.2 8.8-9.4"/></svg></span>
+    <div>
+      <h2>DTV-e verificado</h2>
+      <p class="chico">Documento de Tránsito Vegetal electrónico de SENASA. N.º&nbsp;4127835 (ejemplo).</p>
+    </div>
+  </section>
+
+  <section class="tarjeta bloque producto" aria-label="Producto">
+    <svg viewBox="0 0 120 136" aria-hidden="true">
+      <path d="M63 66C63 48 67 28 74 12" fill="none" stroke="#13432A" stroke-width="3.2" stroke-linecap="round"/>
+      <g fill="#13432A">
+        <ellipse cx="75" cy="13" rx="7.5" ry="12" transform="rotate(18 75 13)"/>
+        <ellipse cx="57" cy="29" rx="6.5" ry="11" transform="rotate(-58 57 29)"/>
+        <ellipse cx="86" cy="33" rx="6.5" ry="11" transform="rotate(62 86 33)"/>
+        <ellipse cx="57" cy="47" rx="5.5" ry="9.5" transform="rotate(-66 57 47)"/>
+        <ellipse cx="80" cy="50" rx="5" ry="8.5" transform="rotate(66 80 50)"/>
+      </g>
+      <path d="M70 64C84 55 107 59 112 77 116 95 102 107 86 105 70 103 58 75 70 64z" fill="#C4841C"/>
+      <path d="M12 95C9 75 24 61 46 60 64 59 80 65 87 79 94 93 90 113 74 123 60 132 34 131 22 119 15 112 13 103 12 95z" fill="#D9951E"/>
+      <path d="M24 85c2-12 12-18 24-19-10 5-17 13-19 25-2 6-6 2-5-6z" fill="#EDB75A"/>
+      <g fill="none" stroke="#9C6410" stroke-width="2.4" stroke-linecap="round">
+        <path d="M42 82q3.5-2.5 7 0M63 77q3-2 6 0M57 106q3.5-2.5 7 0M34 108q3-2 6 0M74 97q3-2 6 0M97 74q2.5-2 5 0M101 91q2.5-2 5 0"/>
+      </g>
+    </svg>
+    <div>
+      <h1>Papa</h1>
+      <p class="dato">De la cosecha a la verdulería en 1 día.</p>
+    </div>
+  </section>
+
+  <div class="par bloque">
+    <section class="tarjeta" aria-label="Quinta">
+      <p class="etiqueta"><svg viewBox="0 0 24 24" fill="none" stroke="#13432A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12C12 8 9.5 5 4.5 5c0 4.2 2.8 7 7.5 7z"/><path d="M12 10c0-3.4 2.3-6 7-6 0 3.6-2.4 6-7 6z"/><path d="M5 21h14"/></svg>Quinta</p>
+      <h2>Quinta El Ceibo</h2>
+      <p class="productor">Familia Romero</p>
+      <p>Escobar, Buenos Aires</p>
+      <span class="pildora">Inscripta en SENASA</span>
+      <p class="renspa">RENSPA <span>01.252.0.04127/03</span> (ejemplo)</p>
+    </section>
+    <section class="tarjeta" aria-label="Producto">
+      <p class="etiqueta"><svg viewBox="0 0 24 24" fill="none" stroke="#13432A" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18v13H3z"/><path d="M3 11.5h18M3 15.8h18M7 7v13M17 7v13"/></svg>Producto</p>
+      <p class="grande">12 cajones</p>
+      <p>Cosecha: 13/10/2026</p>
+      <p>Salida: 14/10/2026</p>
+    </section>
+  </div>
+
+  <h2 class="titulo">Recorrido del lote</h2>
+  <section class="tarjeta bloque" aria-label="Recorrido del lote">
+    <ol class="recorrido">
+      <li class="parada">
+        <span class="circulo"><svg viewBox="0 0 24 24" fill="none" stroke="#F5C431" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12C12 8 9.5 5 4.5 5c0 4.2 2.8 7 7.5 7z"/><path d="M12 10c0-3.4 2.3-6 7-6 0 3.6-2.4 6-7 6z"/><path d="M5 21h14"/></svg></span>
+        <div><h3>Quinta El Ceibo</h3><p>Cosechada el 13/10/2026 a&nbsp;las&nbsp;8:00</p></div>
+      </li>
+      <li class="parada">
+        <span class="circulo"><svg viewBox="0 0 24 24" fill="none" stroke="#F5C431" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 9.5h4l3.5 3.8v3.2h-7.5"/><circle cx="6.5" cy="17.5" r="2" fill="#13432A"/><circle cx="17" cy="17.5" r="2" fill="#13432A"/></svg></span>
+        <div><h3>En camino</h3><p>Salió de la quinta el 14/10/2026 a&nbsp;las&nbsp;6:40</p></div>
+      </li>
+      <li class="parada">
+        <span class="circulo"><svg viewBox="0 0 24 24" fill="none" stroke="#F5C431" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 4h15l1.5 5H3z"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 11.5V20h14v-8.5"/><path d="M10 20v-5h4v5"/></svg></span>
+        <div><h3>Verdulería Don José</h3><p>Llegó el 14/10/2026 a&nbsp;las&nbsp;10:32</p><span class="pildora">Estás acá</span></div>
+      </li>
+    </ol>
+  </section>
+
+  <div class="avisos">
+    <svg class="flechita" aria-hidden="true" viewBox="0 0 43 29" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#13432A" stroke-width="2.318" stroke-linecap="round" stroke-linejoin="round"><path d="M40.56 4.41C31.87 21.79 17.38 24.69 5.79 18.89"/><path d="M10.86 12.37L5.07 18.89L13.04 22.51"/></svg>
+    <button class="boton" id="avisos" type="button" aria-pressed="false">
+      <svg class="i-campana" viewBox="0 0 24 24" fill="none" stroke="#F5C431" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+      <svg class="i-ok" viewBox="0 0 24 24" fill="none" stroke="#F5C431" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+      <span>Activar avisos de este lote</span>
+    </button>
+    <p class="nota" id="nota" aria-live="polite" hidden>Si un control detecta un problema con este lote, te llega un aviso.</p>
+  </div>
+
+  <section class="advertencia" aria-labelledby="adv-titulo">
+    <div class="marco">
+      <h2 id="adv-titulo"><svg viewBox="0 0 32 30" aria-hidden="true"><path d="M16 2.5 30 27.5H2z" fill="#F5C431" stroke="#F5C431" stroke-width="3" stroke-linejoin="round"/><path d="M16 11v8" stroke="#13432A" stroke-width="3" stroke-linecap="round"/><circle cx="16" cy="23.2" r="1.8" fill="#13432A"/></svg>Advertencia</h2>
+      <p class="fuerte">Las frutas y verduras de quintas no inscriptas en SENASA no se pueden rastrear ni controlar en su origen.</p>
+      <div class="cifra"><strong>+400</strong><span>casos por año de síndrome urémico hemolítico (SUH) en Argentina, sobre todo en menores de 5 años (ANMAT, 2020).</span></div>
+      <p class="txt">Lo causa la bacteria <i>E. coli</i>. La verdura cruda se contamina si se riega con agua contaminada (ANMAT, s.f.).</p>
+      <p class="txt">EE. UU., 2018: no se sabía de dónde venía una lechuga contaminada y se pidió tirar toda la lechuga romana del país (CDC, 2018).</p>
+      <div class="consejo">
+        <span class="gota"><svg viewBox="0 0 24 24" fill="#13432A" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.3 8.2 6.3 11.6a6.3 6.3 0 0 1-12.6 0c0-3.4 2.7-7 6.3-11.6z"/></svg></span>
+        <p>Lavá las verduras de hoja, hoja por hoja, bajo el chorro de agua segura.</p>
+      </div>
+      <p class="fuentes">Fuentes:
+        <a href="https://www.argentina.gob.ar/noticias/dia-nacional-de-la-lucha-contra-el-sindrome-uremico-hemolitico" target="_blank" rel="noopener">ANMAT (2020)</a> ·
+        <a href="https://www.argentina.gob.ar/anmat/comunidad/sindrome-uremico-hemolitico-todo-lo-que-debes-saber" target="_blank" rel="noopener">ANMAT (s.f.)</a> ·
+        <a href="https://archive.cdc.gov/www_cdc_gov/media/releases/2018/s1120-ecoli-romain-lettuce.html" target="_blank" rel="noopener">CDC (2018)</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>Prototipo del Grupo 2. Datos, nombres y números de ejemplo.</footer>
+
+<script>
+  (function () {
+    var b = document.getElementById('avisos');
+    var nota = document.getElementById('nota');
+    b.addEventListener('click', function () {
+      if (b.getAttribute('aria-pressed') === 'true') return;
+      b.setAttribute('aria-pressed', 'true');
+      b.querySelector('span').textContent = 'Avisos activados';
+      nota.hidden = false;
+    });
+  })();
+</script>
+</body>
+</html>
